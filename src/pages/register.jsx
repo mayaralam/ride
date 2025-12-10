@@ -31,16 +31,16 @@ export default function Register() {
   return (
     <div>
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-500 to-red-500 p-6 text-right">
-        <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8">
+        <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg w-full max-w-md p-8">
           <div className="text-center mb-6">
             <div className="text-4xl mb-2">🚴‍♀️</div>
-            <h1 className="text-2xl font-bold text-gray-800">
+            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
               RideShare Rentals
             </h1>
-            <p className="text-sm text-gray-500">أنشئ حسابك وابدأ رحلتك</p>
+            <p className="text-sm text-gray-500 dark:text-gray-300">أنشئ حسابك وابدأ رحلتك</p>
           </div>
 
-          <h2 className="text-xl font-semibold text-gray-700 mb-4">
+          <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
             تسجيل حساب جديد
           </h2>
           <Formik
@@ -51,7 +51,7 @@ export default function Register() {
               {() => (
             <Form className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-600">
+                <label className="block text-sm font-medium text-gray-600 dark:text-gray-200">
                   الاسم الكامل
                 </label>
                 <Field
@@ -67,7 +67,7 @@ export default function Register() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-600">
+                <label className="block text-sm font-medium text-gray-600 dark:text-gray-200">
                   البريد الإلكتروني
                 </label>
                 <Field
@@ -84,7 +84,7 @@ export default function Register() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-600">
+                <label className="block text-sm font-medium text-gray-600 dark:text-gray-200">
                   كلمة المرور
                 </label>
                 <Field
@@ -100,7 +100,7 @@ export default function Register() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-600">
+                <label className="block text-sm font-medium text-gray-600 dark:text-gray-200">
                   رقم الهاتف
                 </label>
                 <Field
@@ -115,7 +115,7 @@ export default function Register() {
                   className="text-red-500 text-sm mt-1"
                 />
               </div>
-              <div className="flex items-center gap-2 text-sm text-gray-600">
+              <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-200">
                 <Field type="checkbox" name="agree" />
                 <span>أوافق على الشروط والأحكام</span>
               </div>
@@ -133,7 +133,7 @@ export default function Register() {
             </Form>
              )}
           </Formik>
-          <div className="text-center text-sm text-gray-600 mt-6">
+          <div className="text-center text-sm text-gray-600 dark:text-gray-200 mt-6">
             لديك حساب بالفعل؟{" "}
             <a href="/login" className="text-blue-600 hover:underline">
               تسجيل الدخول

@@ -35,15 +35,15 @@ export default function login() {
   };
   return (
     <div className="text-right min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-500 to-red-500 p-6">
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8">
+      <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg w-full max-w-md p-8">
         <div className="text-center mb-6">
           <div className="text-4xl mb-2">🚴‍♂️</div>
-          <h1 className="text-2xl font-bold text-gray-800">
+          <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-200">
             RideShare Rentals
           </h1>
-          <p className="text-sm text-gray-500">الدراجات النارية والهوائية</p>
+          <p className="text-sm text-gray-500 dark:text-gray-300">الدراجات النارية والهوائية</p>
         </div>
-        <h2 className="text-xl font-semibold text-gray-700 mb-4">
+        <h2 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
           مرحبًا بعودتك
         </h2>
         <Formik
@@ -53,7 +53,7 @@ export default function login() {
         >
           <Form className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-gray-600 dark:text-gray-200">
                 البريد الإلكتروني
               </label>
               <Field
@@ -70,7 +70,7 @@ export default function login() {
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-gray-600">
+              <label className="block text-sm font-medium text-gray-600 dark:text-gray-200">
                 كلمة المرور
               </label>
               <Field
@@ -86,7 +86,7 @@ export default function login() {
               />
             </div>
 
-            <div className="flex items-center justify-between text-sm text-gray-600">
+            <div className="flex items-center justify-between text-sm text-gray-600 dark:text-gray-200">
               <a href="#" className="text-blue-600 hover:underline">
                 هل نسيت كلمة السر؟
               </a>
@@ -103,7 +103,7 @@ export default function login() {
             </button>
           </Form>
         </Formik>
-        <div className="text-center text-sm text-gray-600 mt-6">
+        <div className="text-center text-sm text-gray-600 dark:text-gray-200 mt-6">
           ليس لديك حساب؟{" "}
           <a href="/register" className="text-blue-600 hover:underline">
             اشتراك
