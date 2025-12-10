@@ -1,5 +1,7 @@
 import Nav from "../components/nav";
 import bcg from "../assets/bcg.png";
+import bic1 from "../assets/bic1.jpg";
+import moto2 from "../assets/moto2.jpg";
 import Footer from "../components/footer";
 import { useNavigate } from "react-router-dom";
 import {
@@ -39,14 +41,14 @@ export default function home() {
       description:
         "من الدراجات النارية إلى الدراجات الرياضية، اعثر على الرحلة المثالية لمغامرتك.",
       price: " 600 جنيهًا في اليوم",
-      image: "/src/assets/moto2.jpg",
+      image: moto2,
     },
     {
       title: "دراجات",
       description:
         "استكشف المدينة على الدراجات الصديقة للبيئة المثالية للمغامرات الحضرية.",
       price: " 50 جنيهًا في اليوم",
-      image: "/src/assets/bic1.jpg",
+      image: bic1,
     },
   ];
   const navigate = useNavigate();
