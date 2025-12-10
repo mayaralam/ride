@@ -12,7 +12,6 @@ export default function Register() {
       .string()
       .matches(/^[0-9]{10,15}$/, "أدخل رقم هاتف صحيح")
       .required("مطلوب"),
-    agree: yup.boolean().oneOf([true], "يجب الموافقة على الشروط"),
   });
   const handleSubmit = (values, { resetForm }) => {
     const newUser = {
